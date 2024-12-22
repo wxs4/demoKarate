@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"d350eae4-72bb-4d4e-b85a-74631c1ba64c",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>resources.exampleRest.connectDb</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-12-22 10:53:06 a. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Consultar tabla usuarios</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">resources/exampleRest/connectDb.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Conexion a base de datos</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">connectBd</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Consultar tabla usuarios</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>384</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def config = {username: &#39;root&#39;, password: &#39;&#39;, url: &#39;jdbc:mysql://localhost:3306/northwind&#39;, driverClassName: &#39;com.mysql.cj.jdbc.Driver&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">44</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def DBUtils = Java.type(&#39;util.DbUtils&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def db = new DBUtils(config)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">73</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def usuarios = db.readRows(&#39;SELECT * FROM customers&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">232</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print &#39;Usuarios:&#39;, usuarios</span>
+      </div>
+    </div>
+    <div class="time-cell passed">28</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">10:53:06.402 [print] Usuarios: [
+  {
+    &quot;CustomerID&quot;: 1,
+    &quot;CustomerName&quot;: &quot;Alfreds Futterkiste&quot;,
+    &quot;ContactName&quot;: &quot;Maria Anders&quot;,
+    &quot;Address&quot;: &quot;Obere Str. 57&quot;,
+    &quot;City&quot;: &quot;Berlin&quot;,
+    &quot;PostalCode&quot;: &quot;12209&quot;,
+    &quot;Country&quot;: &quot;Germany&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 2,
+    &quot;CustomerName&quot;: &quot;Ana Trujillo Emparedados y helados&quot;,
+    &quot;ContactName&quot;: &quot;Ana Trujillo&quot;,
+    &quot;Address&quot;: &quot;Avda. de la Constitución 2222&quot;,
+    &quot;City&quot;: &quot;México D.F.&quot;,
+    &quot;PostalCode&quot;: &quot;5021&quot;,
+    &quot;Country&quot;: &quot;Mexico&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 3,
+    &quot;CustomerName&quot;: &quot;Antonio Moreno Taquería&quot;,
+    &quot;ContactName&quot;: &quot;Antonio Moreno&quot;,
+    &quot;Address&quot;: &quot;Mataderos 2312&quot;,
+    &quot;City&quot;: &quot;México D.F.&quot;,
+    &quot;PostalCode&quot;: &quot;5023&quot;,
+    &quot;Country&quot;: &quot;Mexico&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 4,
+    &quot;CustomerName&quot;: &quot;Around the Horn&quot;,
+    &quot;ContactName&quot;: &quot;Thomas Hardy&quot;,
+    &quot;Address&quot;: &quot;120 Hanover Sq.&quot;,
+    &quot;City&quot;: &quot;London&quot;,
+    &quot;PostalCode&quot;: &quot;WA1 1DP&quot;,
+    &quot;Country&quot;: &quot;UK&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 5,
+    &quot;CustomerName&quot;: &quot;Berglunds snabbköp&quot;,
+    &quot;ContactName&quot;: &quot;Christina Berglund&quot;,
+    &quot;Address&quot;: &quot;Berguvsvägen 8&quot;,
+    &quot;City&quot;: &quot;Luleå&quot;,
+    &quot;PostalCode&quot;: &quot;S-958 22&quot;,
+    &quot;Country&quot;: &quot;Sweden&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 6,
+    &quot;CustomerName&quot;: &quot;Blauer See Delikatessen&quot;,
+    &quot;ContactName&quot;: &quot;Hanna Moos&quot;,
+    &quot;Address&quot;: &quot;Forsterstr. 57&quot;,
+    &quot;City&quot;: &quot;Mannheim&quot;,
+    &quot;PostalCode&quot;: &quot;68306&quot;,
+    &quot;Country&quot;: &quot;Germany&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 7,
+    &quot;CustomerName&quot;: &quot;Blondel père et fils&quot;,
+    &quot;ContactName&quot;: &quot;Frédérique Citeaux&quot;,
+    &quot;Address&quot;: &quot;24, place Kléber&quot;,
+    &quot;City&quot;: &quot;Strasbourg&quot;,
+    &quot;PostalCode&quot;: &quot;67000&quot;,
+    &quot;Country&quot;: &quot;France&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 8,
+    &quot;CustomerName&quot;: &quot;Bólido Comidas preparadas&quot;,
+    &quot;ContactName&quot;: &quot;Martín Sommer&quot;,
+    &quot;Address&quot;: &quot;C/ Araquil, 67&quot;,
+    &quot;City&quot;: &quot;Madrid&quot;,
+    &quot;PostalCode&quot;: &quot;28023&quot;,
+    &quot;Country&quot;: &quot;Spain&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 9,
+    &quot;CustomerName&quot;: &quot;Bon app&#39;&#39;&quot;,
+    &quot;ContactName&quot;: &quot;Laurence Lebihans&quot;,
+    &quot;Address&quot;: &quot;12, rue des Bouchers&quot;,
+    &quot;City&quot;: &quot;Marseille&quot;,
+    &quot;PostalCode&quot;: &quot;13008&quot;,
+    &quot;Country&quot;: &quot;France&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 10,
+    &quot;CustomerName&quot;: &quot;Bottom-Dollar Marketse&quot;,
+    &quot;ContactName&quot;: &quot;Elizabeth Lincoln&quot;,
+    &quot;Address&quot;: &quot;23 Tsawassen Blvd.&quot;,
+    &quot;City&quot;: &quot;Tsawassen&quot;,
+    &quot;PostalCode&quot;: &quot;T2F 8M4&quot;,
+    &quot;Country&quot;: &quot;Canada&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 11,
+    &quot;CustomerName&quot;: &quot;B&#39;&#39;s Beverages&quot;,
+    &quot;ContactName&quot;: &quot;Victoria Ashworth&quot;,
+    &quot;Address&quot;: &quot;Fauntleroy Circus&quot;,
+    &quot;City&quot;: &quot;London&quot;,
+    &quot;PostalCode&quot;: &quot;EC2 5NT&quot;,
+    &quot;Country&quot;: &quot;UK&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 12,
+    &quot;CustomerName&quot;: &quot;Cactus Comidas para llevar&quot;,
+    &quot;ContactName&quot;: &quot;Patricio Simpson&quot;,
+    &quot;Address&quot;: &quot;Cerrito 333&quot;,
+    &quot;City&quot;: &quot;Buenos Aires&quot;,
+    &quot;PostalCode&quot;: &quot;1010&quot;,
+    &quot;Country&quot;: &quot;Argentina&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 13,
+    &quot;CustomerName&quot;: &quot;Centro comercial Moctezuma&quot;,
+    &quot;ContactName&quot;: &quot;Francisco Chang&quot;,
+    &quot;Address&quot;: &quot;Sierras de Granada 9993&quot;,
+    &quot;City&quot;: &quot;México D.F.&quot;,
+    &quot;PostalCode&quot;: &quot;5022&quot;,
+    &quot;Country&quot;: &quot;Mexico&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 14,
+    &quot;CustomerName&quot;: &quot;Chop-suey Chinese&quot;,
+    &quot;ContactName&quot;: &quot;Yang Wang&quot;,
+    &quot;Address&quot;: &quot;Hauptstr. 29&quot;,
+    &quot;City&quot;: &quot;Bern&quot;,
+    &quot;PostalCode&quot;: &quot;3012&quot;,
+    &quot;Country&quot;: &quot;Switzerland&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 15,
+    &quot;CustomerName&quot;: &quot;Comércio Mineiro&quot;,
+    &quot;ContactName&quot;: &quot;Pedro Afonso&quot;,
+    &quot;Address&quot;: &quot;Av. dos Lusíadas, 23&quot;,
+    &quot;City&quot;: &quot;São Paulo&quot;,
+    &quot;PostalCode&quot;: &quot;05432-043&quot;,
+    &quot;Country&quot;: &quot;Brazil&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 16,
+    &quot;CustomerName&quot;: &quot;Consolidated Holdings&quot;,
+    &quot;ContactName&quot;: &quot;Elizabeth Brown&quot;,
+    &quot;Address&quot;: &quot;Berkeley Gardens 12 Brewery&quot;,
+    &quot;City&quot;: &quot;London&quot;,
+    &quot;PostalCode&quot;: &quot;WX1 6LT&quot;,
+    &quot;Country&quot;: &quot;UK&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 17,
+    &quot;CustomerName&quot;: &quot;Drachenblut Delikatessend&quot;,
+    &quot;ContactName&quot;: &quot;Sven Ottlieb&quot;,
+    &quot;Address&quot;: &quot;Walserweg 21&quot;,
+    &quot;City&quot;: &quot;Aachen&quot;,
+    &quot;PostalCode&quot;: &quot;52066&quot;,
+    &quot;Country&quot;: &quot;Germany&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 18,
+    &quot;CustomerName&quot;: &quot;Du monde entier&quot;,
+    &quot;ContactName&quot;: &quot;Janine Labrune&quot;,
+    &quot;Address&quot;: &quot;67, rue des Cinquante Otages&quot;,
+    &quot;City&quot;: &quot;Nantes&quot;,
+    &quot;PostalCode&quot;: &quot;44000&quot;,
+    &quot;Country&quot;: &quot;France&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 19,
+    &quot;CustomerName&quot;: &quot;Eastern Connection&quot;,
+    &quot;ContactName&quot;: &quot;Ann Devon&quot;,
+    &quot;Address&quot;: &quot;35 King George&quot;,
+    &quot;City&quot;: &quot;London&quot;,
+    &quot;PostalCode&quot;: &quot;WX3 6FW&quot;,
+    &quot;Country&quot;: &quot;UK&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 20,
+    &quot;CustomerName&quot;: &quot;Ernst Handel&quot;,
+    &quot;ContactName&quot;: &quot;Roland Mendel&quot;,
+    &quot;Address&quot;: &quot;Kirchgasse 6&quot;,
+    &quot;City&quot;: &quot;Graz&quot;,
+    &quot;PostalCode&quot;: &quot;8010&quot;,
+    &quot;Country&quot;: &quot;Austria&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 21,
+    &quot;CustomerName&quot;: &quot;Familia Arquibaldo&quot;,
+    &quot;ContactName&quot;: &quot;Aria Cruz&quot;,
+    &quot;Address&quot;: &quot;Rua Orós, 92&quot;,
+    &quot;City&quot;: &quot;São Paulo&quot;,
+    &quot;PostalCode&quot;: &quot;05442-030&quot;,
+    &quot;Country&quot;: &quot;Brazil&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 22,
+    &quot;CustomerName&quot;: &quot;FISSA Fabrica Inter. Salchichas S.A.&quot;,
+    &quot;ContactName&quot;: &quot;Diego Roel&quot;,
+    &quot;Address&quot;: &quot;C/ Moralzarzal, 86&quot;,
+    &quot;City&quot;: &quot;Madrid&quot;,
+    &quot;PostalCode&quot;: &quot;28034&quot;,
+    &quot;Country&quot;: &quot;Spain&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 23,
+    &quot;CustomerName&quot;: &quot;Folies gourmandes&quot;,
+    &quot;ContactName&quot;: &quot;Martine Rancé&quot;,
+    &quot;Address&quot;: &quot;184, chaussée de Tournai&quot;,
+    &quot;City&quot;: &quot;Lille&quot;,
+    &quot;PostalCode&quot;: &quot;59000&quot;,
+    &quot;Country&quot;: &quot;France&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 24,
+    &quot;CustomerName&quot;: &quot;Folk och fä HB&quot;,
+    &quot;ContactName&quot;: &quot;Maria Larsson&quot;,
+    &quot;Address&quot;: &quot;Åkergatan 24&quot;,
+    &quot;City&quot;: &quot;Bräcke&quot;,
+    &quot;PostalCode&quot;: &quot;S-844 67&quot;,
+    &quot;Country&quot;: &quot;Sweden&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 25,
+    &quot;CustomerName&quot;: &quot;Frankenversand&quot;,
+    &quot;ContactName&quot;: &quot;Peter Franken&quot;,
+    &quot;Address&quot;: &quot;Berliner Platz 43&quot;,
+    &quot;City&quot;: &quot;München&quot;,
+    &quot;PostalCode&quot;: &quot;80805&quot;,
+    &quot;Country&quot;: &quot;Germany&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 26,
+    &quot;CustomerName&quot;: &quot;France restauration&quot;,
+    &quot;ContactName&quot;: &quot;Carine Schmitt&quot;,
+    &quot;Address&quot;: &quot;54, rue Royale&quot;,
+    &quot;City&quot;: &quot;Nantes&quot;,
+    &quot;PostalCode&quot;: &quot;44000&quot;,
+    &quot;Country&quot;: &quot;France&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 27,
+    &quot;CustomerName&quot;: &quot;Franchi S.p.A.&quot;,
+    &quot;ContactName&quot;: &quot;Paolo Accorti&quot;,
+    &quot;Address&quot;: &quot;Via Monte Bianco 34&quot;,
+    &quot;City&quot;: &quot;Torino&quot;,
+    &quot;PostalCode&quot;: &quot;10100&quot;,
+    &quot;Country&quot;: &quot;Italy&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 28,
+    &quot;CustomerName&quot;: &quot;Furia Bacalhau e Frutos do Mar&quot;,
+    &quot;ContactName&quot;: &quot;Lino Rodriguez&quot;,
+    &quot;Address&quot;: &quot;Jardim das rosas n. 32&quot;,
+    &quot;City&quot;: &quot;Lisboa&quot;,
+    &quot;PostalCode&quot;: &quot;1675&quot;,
+    &quot;Country&quot;: &quot;Portugal&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 29,
+    &quot;CustomerName&quot;: &quot;Galería del gastrónomo&quot;,
+    &quot;ContactName&quot;: &quot;Eduardo Saavedra&quot;,
+    &quot;Address&quot;: &quot;Rambla de Cataluña, 23&quot;,
+    &quot;City&quot;: &quot;Barcelona&quot;,
+    &quot;PostalCode&quot;: &quot;8022&quot;,
+    &quot;Country&quot;: &quot;Spain&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 30,
+    &quot;CustomerName&quot;: &quot;Godos Cocina Típica&quot;,
+    &quot;ContactName&quot;: &quot;José Pedro Freyre&quot;,
+    &quot;Address&quot;: &quot;C/ Romero, 33&quot;,
+    &quot;City&quot;: &quot;Sevilla&quot;,
+    &quot;PostalCode&quot;: &quot;41101&quot;,
+    &quot;Country&quot;: &quot;Spain&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 31,
+    &quot;CustomerName&quot;: &quot;Gourmet Lanchonetes&quot;,
+    &quot;ContactName&quot;: &quot;André Fonseca&quot;,
+    &quot;Address&quot;: &quot;Av. Brasil, 442&quot;,
+    &quot;City&quot;: &quot;Campinas&quot;,
+    &quot;PostalCode&quot;: &quot;04876-786&quot;,
+    &quot;Country&quot;: &quot;Brazil&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 32,
+    &quot;CustomerName&quot;: &quot;Great Lakes Food Market&quot;,
+    &quot;ContactName&quot;: &quot;Howard Snyder&quot;,
+    &quot;Address&quot;: &quot;2732 Baker Blvd.&quot;,
+    &quot;City&quot;: &quot;Eugene&quot;,
+    &quot;PostalCode&quot;: &quot;97403&quot;,
+    &quot;Country&quot;: &quot;USA&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 33,
+    &quot;CustomerName&quot;: &quot;GROSELLA-Restaurante&quot;,
+    &quot;ContactName&quot;: &quot;Manuel Pereira&quot;,
+    &quot;Address&quot;: &quot;5ª Ave. Los Palos Grandes&quot;,
+    &quot;City&quot;: &quot;Caracas&quot;,
+    &quot;PostalCode&quot;: &quot;1081&quot;,
+    &quot;Country&quot;: &quot;Venezuela&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 34,
+    &quot;CustomerName&quot;: &quot;Hanari Carnes&quot;,
+    &quot;ContactName&quot;: &quot;Mario Pontes&quot;,
+    &quot;Address&quot;: &quot;Rua do Paço, 67&quot;,
+    &quot;City&quot;: &quot;Rio de Janeiro&quot;,
+    &quot;PostalCode&quot;: &quot;05454-876&quot;,
+    &quot;Country&quot;: &quot;Brazil&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 35,
+    &quot;CustomerName&quot;: &quot;HILARIÓN-Abastos&quot;,
+    &quot;ContactName&quot;: &quot;Carlos Hernández&quot;,
+    &quot;Address&quot;: &quot;Carrera 22 con Ave. Carlos Soublette #8-35&quot;,
+    &quot;City&quot;: &quot;San Cristóbal&quot;,
+    &quot;PostalCode&quot;: &quot;5022&quot;,
+    &quot;Country&quot;: &quot;Venezuela&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 36,
+    &quot;CustomerName&quot;: &quot;Hungry Coyote Import Store&quot;,
+    &quot;ContactName&quot;: &quot;Yoshi Latimer&quot;,
+    &quot;Address&quot;: &quot;City Center Plaza 516 Main St.&quot;,
+    &quot;City&quot;: &quot;Elgin&quot;,
+    &quot;PostalCode&quot;: &quot;97827&quot;,
+    &quot;Country&quot;: &quot;USA&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 37,
+    &quot;CustomerName&quot;: &quot;Hungry Owl All-Night Grocers&quot;,
+    &quot;ContactName&quot;: &quot;Patricia McKenna&quot;,
+    &quot;Address&quot;: &quot;8 Johnstown Road&quot;,
+    &quot;City&quot;: &quot;Cork&quot;,
+    &quot;PostalCode&quot;: &quot;&quot;,
+    &quot;Country&quot;: &quot;Ireland&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 38,
+    &quot;CustomerName&quot;: &quot;Island Trading&quot;,
+    &quot;ContactName&quot;: &quot;Helen Bennett&quot;,
+    &quot;Address&quot;: &quot;Garden House Crowther Way&quot;,
+    &quot;City&quot;: &quot;Cowes&quot;,
+    &quot;PostalCode&quot;: &quot;PO31 7PJ&quot;,
+    &quot;Country&quot;: &quot;UK&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 39,
+    &quot;CustomerName&quot;: &quot;Königlich Essen&quot;,
+    &quot;ContactName&quot;: &quot;Philip Cramer&quot;,
+    &quot;Address&quot;: &quot;Maubelstr. 90&quot;,
+    &quot;City&quot;: &quot;Brandenburg&quot;,
+    &quot;PostalCode&quot;: &quot;14776&quot;,
+    &quot;Country&quot;: &quot;Germany&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 40,
+    &quot;CustomerName&quot;: &quot;La corne d&#39;&#39;abondance&quot;,
+    &quot;ContactName&quot;: &quot;Daniel Tonini&quot;,
+    &quot;Address&quot;: &quot;67, avenue de l&#39;&#39;Europe&quot;,
+    &quot;City&quot;: &quot;Versailles&quot;,
+    &quot;PostalCode&quot;: &quot;78000&quot;,
+    &quot;Country&quot;: &quot;France&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 41,
+    &quot;CustomerName&quot;: &quot;La maison d&#39;&#39;Asie&quot;,
+    &quot;ContactName&quot;: &quot;Annette Roulet&quot;,
+    &quot;Address&quot;: &quot;1 rue Alsace-Lorraine&quot;,
+    &quot;City&quot;: &quot;Toulouse&quot;,
+    &quot;PostalCode&quot;: &quot;31000&quot;,
+    &quot;Country&quot;: &quot;France&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 42,
+    &quot;CustomerName&quot;: &quot;Laughing Bacchus Wine Cellars&quot;,
+    &quot;ContactName&quot;: &quot;Yoshi Tannamuri&quot;,
+    &quot;Address&quot;: &quot;1900 Oak St.&quot;,
+    &quot;City&quot;: &quot;Vancouver&quot;,
+    &quot;PostalCode&quot;: &quot;V3F 2K1&quot;,
+    &quot;Country&quot;: &quot;Canada&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 43,
+    &quot;CustomerName&quot;: &quot;Lazy K Kountry Store&quot;,
+    &quot;ContactName&quot;: &quot;John Steel&quot;,
+    &quot;Address&quot;: &quot;12 Orchestra Terrace&quot;,
+    &quot;City&quot;: &quot;Walla Walla&quot;,
+    &quot;PostalCode&quot;: &quot;99362&quot;,
+    &quot;Country&quot;: &quot;USA&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 44,
+    &quot;CustomerName&quot;: &quot;Lehmanns Marktstand&quot;,
+    &quot;ContactName&quot;: &quot;Renate Messner&quot;,
+    &quot;Address&quot;: &quot;Magazinweg 7&quot;,
+    &quot;City&quot;: &quot;Frankfurt a.M.&quot;,
+    &quot;PostalCode&quot;: &quot;60528&quot;,
+    &quot;Country&quot;: &quot;Germany&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 45,
+    &quot;CustomerName&quot;: &quot;Let&#39;&#39;s Stop N Shop&quot;,
+    &quot;ContactName&quot;: &quot;Jaime Yorres&quot;,
+    &quot;Address&quot;: &quot;87 Polk St. Suite 5&quot;,
+    &quot;City&quot;: &quot;San Francisco&quot;,
+    &quot;PostalCode&quot;: &quot;94117&quot;,
+    &quot;Country&quot;: &quot;USA&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 46,
+    &quot;CustomerName&quot;: &quot;LILA-Supermercado&quot;,
+    &quot;ContactName&quot;: &quot;Carlos González&quot;,
+    &quot;Address&quot;: &quot;Carrera 52 con Ave. Bolívar #65-98 Llano Largo&quot;,
+    &quot;City&quot;: &quot;Barquisimeto&quot;,
+    &quot;PostalCode&quot;: &quot;3508&quot;,
+    &quot;Country&quot;: &quot;Venezuela&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 47,
+    &quot;CustomerName&quot;: &quot;LINO-Delicateses&quot;,
+    &quot;ContactName&quot;: &quot;Felipe Izquierdo&quot;,
+    &quot;Address&quot;: &quot;Ave. 5 de Mayo Porlamar&quot;,
+    &quot;City&quot;: &quot;I. de Margarita&quot;,
+    &quot;PostalCode&quot;: &quot;4980&quot;,
+    &quot;Country&quot;: &quot;Venezuela&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 48,
+    &quot;CustomerName&quot;: &quot;Lonesome Pine Restaurant&quot;,
+    &quot;ContactName&quot;: &quot;Fran Wilson&quot;,
+    &quot;Address&quot;: &quot;89 Chiaroscuro Rd.&quot;,
+    &quot;City&quot;: &quot;Portland&quot;,
+    &quot;PostalCode&quot;: &quot;97219&quot;,
+    &quot;Country&quot;: &quot;USA&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 49,
+    &quot;CustomerName&quot;: &quot;Magazzini Alimentari Riuniti&quot;,
+    &quot;ContactName&quot;: &quot;Giovanni Rovelli&quot;,
+    &quot;Address&quot;: &quot;Via Ludovico il Moro 22&quot;,
+    &quot;City&quot;: &quot;Bergamo&quot;,
+    &quot;PostalCode&quot;: &quot;24100&quot;,
+    &quot;Country&quot;: &quot;Italy&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 50,
+    &quot;CustomerName&quot;: &quot;Maison Dewey&quot;,
+    &quot;ContactName&quot;: &quot;Catherine Dewey&quot;,
+    &quot;Address&quot;: &quot;Rue Joseph-Bens 532&quot;,
+    &quot;City&quot;: &quot;Bruxelles&quot;,
+    &quot;PostalCode&quot;: &quot;B-1180&quot;,
+    &quot;Country&quot;: &quot;Belgium&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 51,
+    &quot;CustomerName&quot;: &quot;Mère Paillarde&quot;,
+    &quot;ContactName&quot;: &quot;Jean Fresnière&quot;,
+    &quot;Address&quot;: &quot;43 rue St. Laurent&quot;,
+    &quot;City&quot;: &quot;Montréal&quot;,
+    &quot;PostalCode&quot;: &quot;H1J 1C3&quot;,
+    &quot;Country&quot;: &quot;Canada&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 52,
+    &quot;CustomerName&quot;: &quot;Morgenstern Gesundkost&quot;,
+    &quot;ContactName&quot;: &quot;Alexander Feuer&quot;,
+    &quot;Address&quot;: &quot;Heerstr. 22&quot;,
+    &quot;City&quot;: &quot;Leipzig&quot;,
+    &quot;PostalCode&quot;: &quot;4179&quot;,
+    &quot;Country&quot;: &quot;Germany&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 53,
+    &quot;CustomerName&quot;: &quot;North/South&quot;,
+    &quot;ContactName&quot;: &quot;Simon Crowther&quot;,
+    &quot;Address&quot;: &quot;South House 300 Queensbridge&quot;,
+    &quot;City&quot;: &quot;London&quot;,
+    &quot;PostalCode&quot;: &quot;SW7 1RZ&quot;,
+    &quot;Country&quot;: &quot;UK&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 54,
+    &quot;CustomerName&quot;: &quot;Océano Atlántico Ltda.&quot;,
+    &quot;ContactName&quot;: &quot;Yvonne Moncada&quot;,
+    &quot;Address&quot;: &quot;Ing. Gustavo Moncada 8585 Piso 20-A&quot;,
+    &quot;City&quot;: &quot;Buenos Aires&quot;,
+    &quot;PostalCode&quot;: &quot;1010&quot;,
+    &quot;Country&quot;: &quot;Argentina&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 55,
+    &quot;CustomerName&quot;: &quot;Old World Delicatessen&quot;,
+    &quot;ContactName&quot;: &quot;Rene Phillips&quot;,
+    &quot;Address&quot;: &quot;2743 Bering St.&quot;,
+    &quot;City&quot;: &quot;Anchorage&quot;,
+    &quot;PostalCode&quot;: &quot;99508&quot;,
+    &quot;Country&quot;: &quot;USA&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 56,
+    &quot;CustomerName&quot;: &quot;Ottilies Käseladen&quot;,
+    &quot;ContactName&quot;: &quot;Henriette Pfalzheim&quot;,
+    &quot;Address&quot;: &quot;Mehrheimerstr. 369&quot;,
+    &quot;City&quot;: &quot;Köln&quot;,
+    &quot;PostalCode&quot;: &quot;50739&quot;,
+    &quot;Country&quot;: &quot;Germany&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 57,
+    &quot;CustomerName&quot;: &quot;Paris spécialités&quot;,
+    &quot;ContactName&quot;: &quot;Marie Bertrand&quot;,
+    &quot;Address&quot;: &quot;265, boulevard Charonne&quot;,
+    &quot;City&quot;: &quot;Paris&quot;,
+    &quot;PostalCode&quot;: &quot;75012&quot;,
+    &quot;Country&quot;: &quot;France&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 58,
+    &quot;CustomerName&quot;: &quot;Pericles Comidas clásicas&quot;,
+    &quot;ContactName&quot;: &quot;Guillermo Fernández&quot;,
+    &quot;Address&quot;: &quot;Calle Dr. Jorge Cash 321&quot;,
+    &quot;City&quot;: &quot;México D.F.&quot;,
+    &quot;PostalCode&quot;: &quot;5033&quot;,
+    &quot;Country&quot;: &quot;Mexico&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 59,
+    &quot;CustomerName&quot;: &quot;Piccolo und mehr&quot;,
+    &quot;ContactName&quot;: &quot;Georg Pipps&quot;,
+    &quot;Address&quot;: &quot;Geislweg 14&quot;,
+    &quot;City&quot;: &quot;Salzburg&quot;,
+    &quot;PostalCode&quot;: &quot;5020&quot;,
+    &quot;Country&quot;: &quot;Austria&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 60,
+    &quot;CustomerName&quot;: &quot;Princesa Isabel Vinhoss&quot;,
+    &quot;ContactName&quot;: &quot;Isabel de Castro&quot;,
+    &quot;Address&quot;: &quot;Estrada da saúde n. 58&quot;,
+    &quot;City&quot;: &quot;Lisboa&quot;,
+    &quot;PostalCode&quot;: &quot;1756&quot;,
+    &quot;Country&quot;: &quot;Portugal&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 61,
+    &quot;CustomerName&quot;: &quot;Que Delícia&quot;,
+    &quot;ContactName&quot;: &quot;Bernardo Batista&quot;,
+    &quot;Address&quot;: &quot;Rua da Panificadora, 12&quot;,
+    &quot;City&quot;: &quot;Rio de Janeiro&quot;,
+    &quot;PostalCode&quot;: &quot;02389-673&quot;,
+    &quot;Country&quot;: &quot;Brazil&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 62,
+    &quot;CustomerName&quot;: &quot;Queen Cozinha&quot;,
+    &quot;ContactName&quot;: &quot;Lúcia Carvalho&quot;,
+    &quot;Address&quot;: &quot;Alameda dos Canàrios, 891&quot;,
+    &quot;City&quot;: &quot;São Paulo&quot;,
+    &quot;PostalCode&quot;: &quot;05487-020&quot;,
+    &quot;Country&quot;: &quot;Brazil&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 63,
+    &quot;CustomerName&quot;: &quot;QUICK-Stop&quot;,
+    &quot;ContactName&quot;: &quot;Horst Kloss&quot;,
+    &quot;Address&quot;: &quot;Taucherstraße 10&quot;,
+    &quot;City&quot;: &quot;Cunewalde&quot;,
+    &quot;PostalCode&quot;: &quot;1307&quot;,
+    &quot;Country&quot;: &quot;Germany&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 64,
+    &quot;CustomerName&quot;: &quot;Rancho grande&quot;,
+    &quot;ContactName&quot;: &quot;Sergio Gutiérrez&quot;,
+    &quot;Address&quot;: &quot;Av. del Libertador 900&quot;,
+    &quot;City&quot;: &quot;Buenos Aires&quot;,
+    &quot;PostalCode&quot;: &quot;1010&quot;,
+    &quot;Country&quot;: &quot;Argentina&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 65,
+    &quot;CustomerName&quot;: &quot;Rattlesnake Canyon Grocery&quot;,
+    &quot;ContactName&quot;: &quot;Paula Wilson&quot;,
+    &quot;Address&quot;: &quot;2817 Milton Dr.&quot;,
+    &quot;City&quot;: &quot;Albuquerque&quot;,
+    &quot;PostalCode&quot;: &quot;87110&quot;,
+    &quot;Country&quot;: &quot;USA&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 66,
+    &quot;CustomerName&quot;: &quot;Reggiani Caseifici&quot;,
+    &quot;ContactName&quot;: &quot;Maurizio Moroni&quot;,
+    &quot;Address&quot;: &quot;Strada Provinciale 124&quot;,
+    &quot;City&quot;: &quot;Reggio Emilia&quot;,
+    &quot;PostalCode&quot;: &quot;42100&quot;,
+    &quot;Country&quot;: &quot;Italy&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 67,
+    &quot;CustomerName&quot;: &quot;Ricardo Adocicados&quot;,
+    &quot;ContactName&quot;: &quot;Janete Limeira&quot;,
+    &quot;Address&quot;: &quot;Av. Copacabana, 267&quot;,
+    &quot;City&quot;: &quot;Rio de Janeiro&quot;,
+    &quot;PostalCode&quot;: &quot;02389-890&quot;,
+    &quot;Country&quot;: &quot;Brazil&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 68,
+    &quot;CustomerName&quot;: &quot;Richter Supermarkt&quot;,
+    &quot;ContactName&quot;: &quot;Michael Holz&quot;,
+    &quot;Address&quot;: &quot;Grenzacherweg 237&quot;,
+    &quot;City&quot;: &quot;Genève&quot;,
+    &quot;PostalCode&quot;: &quot;1203&quot;,
+    &quot;Country&quot;: &quot;Switzerland&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 69,
+    &quot;CustomerName&quot;: &quot;Romero y tomillo&quot;,
+    &quot;ContactName&quot;: &quot;Alejandra Camino&quot;,
+    &quot;Address&quot;: &quot;Gran Vía, 1&quot;,
+    &quot;City&quot;: &quot;Madrid&quot;,
+    &quot;PostalCode&quot;: &quot;28001&quot;,
+    &quot;Country&quot;: &quot;Spain&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 70,
+    &quot;CustomerName&quot;: &quot;Santé Gourmet&quot;,
+    &quot;ContactName&quot;: &quot;Jonas Bergulfsen&quot;,
+    &quot;Address&quot;: &quot;Erling Skakkes gate 78&quot;,
+    &quot;City&quot;: &quot;Stavern&quot;,
+    &quot;PostalCode&quot;: &quot;4110&quot;,
+    &quot;Country&quot;: &quot;Norway&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 71,
+    &quot;CustomerName&quot;: &quot;Save-a-lot Markets&quot;,
+    &quot;ContactName&quot;: &quot;Jose Pavarotti&quot;,
+    &quot;Address&quot;: &quot;187 Suffolk Ln.&quot;,
+    &quot;City&quot;: &quot;Boise&quot;,
+    &quot;PostalCode&quot;: &quot;83720&quot;,
+    &quot;Country&quot;: &quot;USA&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 72,
+    &quot;CustomerName&quot;: &quot;Seven Seas Imports&quot;,
+    &quot;ContactName&quot;: &quot;Hari Kumar&quot;,
+    &quot;Address&quot;: &quot;90 Wadhurst Rd.&quot;,
+    &quot;City&quot;: &quot;London&quot;,
+    &quot;PostalCode&quot;: &quot;OX15 4NB&quot;,
+    &quot;Country&quot;: &quot;UK&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 73,
+    &quot;CustomerName&quot;: &quot;Simons bistro&quot;,
+    &quot;ContactName&quot;: &quot;Jytte Petersen&quot;,
+    &quot;Address&quot;: &quot;Vinbæltet 34&quot;,
+    &quot;City&quot;: &quot;København&quot;,
+    &quot;PostalCode&quot;: &quot;1734&quot;,
+    &quot;Country&quot;: &quot;Denmark&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 74,
+    &quot;CustomerName&quot;: &quot;Spécialités du monde&quot;,
+    &quot;ContactName&quot;: &quot;Dominique Perrier&quot;,
+    &quot;Address&quot;: &quot;25, rue Lauriston&quot;,
+    &quot;City&quot;: &quot;Paris&quot;,
+    &quot;PostalCode&quot;: &quot;75016&quot;,
+    &quot;Country&quot;: &quot;France&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 75,
+    &quot;CustomerName&quot;: &quot;Split Rail Beer &amp; Ale&quot;,
+    &quot;ContactName&quot;: &quot;Art Braunschweiger&quot;,
+    &quot;Address&quot;: &quot;P.O. Box 555&quot;,
+    &quot;City&quot;: &quot;Lander&quot;,
+    &quot;PostalCode&quot;: &quot;82520&quot;,
+    &quot;Country&quot;: &quot;USA&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 76,
+    &quot;CustomerName&quot;: &quot;Suprêmes délices&quot;,
+    &quot;ContactName&quot;: &quot;Pascale Cartrain&quot;,
+    &quot;Address&quot;: &quot;Boulevard Tirou, 255&quot;,
+    &quot;City&quot;: &quot;Charleroi&quot;,
+    &quot;PostalCode&quot;: &quot;B-6000&quot;,
+    &quot;Country&quot;: &quot;Belgium&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 77,
+    &quot;CustomerName&quot;: &quot;The Big Cheese&quot;,
+    &quot;ContactName&quot;: &quot;Liz Nixon&quot;,
+    &quot;Address&quot;: &quot;89 Jefferson Way Suite 2&quot;,
+    &quot;City&quot;: &quot;Portland&quot;,
+    &quot;PostalCode&quot;: &quot;97201&quot;,
+    &quot;Country&quot;: &quot;USA&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 78,
+    &quot;CustomerName&quot;: &quot;The Cracker Box&quot;,
+    &quot;ContactName&quot;: &quot;Liu Wong&quot;,
+    &quot;Address&quot;: &quot;55 Grizzly Peak Rd.&quot;,
+    &quot;City&quot;: &quot;Butte&quot;,
+    &quot;PostalCode&quot;: &quot;59801&quot;,
+    &quot;Country&quot;: &quot;USA&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 79,
+    &quot;CustomerName&quot;: &quot;Toms Spezialitäten&quot;,
+    &quot;ContactName&quot;: &quot;Karin Josephs&quot;,
+    &quot;Address&quot;: &quot;Luisenstr. 48&quot;,
+    &quot;City&quot;: &quot;Münster&quot;,
+    &quot;PostalCode&quot;: &quot;44087&quot;,
+    &quot;Country&quot;: &quot;Germany&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 80,
+    &quot;CustomerName&quot;: &quot;Tortuga Restaurante&quot;,
+    &quot;ContactName&quot;: &quot;Miguel Angel Paolino&quot;,
+    &quot;Address&quot;: &quot;Avda. Azteca 123&quot;,
+    &quot;City&quot;: &quot;México D.F.&quot;,
+    &quot;PostalCode&quot;: &quot;5033&quot;,
+    &quot;Country&quot;: &quot;Mexico&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 81,
+    &quot;CustomerName&quot;: &quot;Tradição Hipermercados&quot;,
+    &quot;ContactName&quot;: &quot;Anabela Domingues&quot;,
+    &quot;Address&quot;: &quot;Av. Inês de Castro, 414&quot;,
+    &quot;City&quot;: &quot;São Paulo&quot;,
+    &quot;PostalCode&quot;: &quot;05634-030&quot;,
+    &quot;Country&quot;: &quot;Brazil&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 82,
+    &quot;CustomerName&quot;: &quot;Trail&#39;&#39;s Head Gourmet Provisioners&quot;,
+    &quot;ContactName&quot;: &quot;Helvetius Nagy&quot;,
+    &quot;Address&quot;: &quot;722 DaVinci Blvd.&quot;,
+    &quot;City&quot;: &quot;Kirkland&quot;,
+    &quot;PostalCode&quot;: &quot;98034&quot;,
+    &quot;Country&quot;: &quot;USA&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 83,
+    &quot;CustomerName&quot;: &quot;Vaffeljernet&quot;,
+    &quot;ContactName&quot;: &quot;Palle Ibsen&quot;,
+    &quot;Address&quot;: &quot;Smagsløget 45&quot;,
+    &quot;City&quot;: &quot;Århus&quot;,
+    &quot;PostalCode&quot;: &quot;8200&quot;,
+    &quot;Country&quot;: &quot;Denmark&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 84,
+    &quot;CustomerName&quot;: &quot;Victuailles en stock&quot;,
+    &quot;ContactName&quot;: &quot;Mary Saveley&quot;,
+    &quot;Address&quot;: &quot;2, rue du Commerce&quot;,
+    &quot;City&quot;: &quot;Lyon&quot;,
+    &quot;PostalCode&quot;: &quot;69004&quot;,
+    &quot;Country&quot;: &quot;France&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 85,
+    &quot;CustomerName&quot;: &quot;Vins et alcools Chevalier&quot;,
+    &quot;ContactName&quot;: &quot;Paul Henriot&quot;,
+    &quot;Address&quot;: &quot;59 rue de l&#39;&#39;Abbaye&quot;,
+    &quot;City&quot;: &quot;Reims&quot;,
+    &quot;PostalCode&quot;: &quot;51100&quot;,
+    &quot;Country&quot;: &quot;France&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 86,
+    &quot;CustomerName&quot;: &quot;Die Wandernde Kuh&quot;,
+    &quot;ContactName&quot;: &quot;Rita Müller&quot;,
+    &quot;Address&quot;: &quot;Adenauerallee 900&quot;,
+    &quot;City&quot;: &quot;Stuttgart&quot;,
+    &quot;PostalCode&quot;: &quot;70563&quot;,
+    &quot;Country&quot;: &quot;Germany&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 87,
+    &quot;CustomerName&quot;: &quot;Wartian Herkku&quot;,
+    &quot;ContactName&quot;: &quot;Pirkko Koskitalo&quot;,
+    &quot;Address&quot;: &quot;Torikatu 38&quot;,
+    &quot;City&quot;: &quot;Oulu&quot;,
+    &quot;PostalCode&quot;: &quot;90110&quot;,
+    &quot;Country&quot;: &quot;Finland&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 88,
+    &quot;CustomerName&quot;: &quot;Wellington Importadora&quot;,
+    &quot;ContactName&quot;: &quot;Paula Parente&quot;,
+    &quot;Address&quot;: &quot;Rua do Mercado, 12&quot;,
+    &quot;City&quot;: &quot;Resende&quot;,
+    &quot;PostalCode&quot;: &quot;08737-363&quot;,
+    &quot;Country&quot;: &quot;Brazil&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 89,
+    &quot;CustomerName&quot;: &quot;White Clover Markets&quot;,
+    &quot;ContactName&quot;: &quot;Karl Jablonski&quot;,
+    &quot;Address&quot;: &quot;305 - 14th Ave. S. Suite 3B&quot;,
+    &quot;City&quot;: &quot;Seattle&quot;,
+    &quot;PostalCode&quot;: &quot;98128&quot;,
+    &quot;Country&quot;: &quot;USA&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 90,
+    &quot;CustomerName&quot;: &quot;Wilman Kala&quot;,
+    &quot;ContactName&quot;: &quot;Matti Karttunen&quot;,
+    &quot;Address&quot;: &quot;Keskuskatu 45&quot;,
+    &quot;City&quot;: &quot;Helsinki&quot;,
+    &quot;PostalCode&quot;: &quot;21240&quot;,
+    &quot;Country&quot;: &quot;Finland&quot;
+  },
+  {
+    &quot;CustomerID&quot;: 91,
+    &quot;CustomerName&quot;: &quot;Wolski&quot;,
+    &quot;ContactName&quot;: &quot;Zbyszek&quot;,
+    &quot;Address&quot;: &quot;ul. Filtrowa 68&quot;,
+    &quot;City&quot;: &quot;Walla&quot;,
+    &quot;PostalCode&quot;: &quot;01-012&quot;,
+    &quot;Country&quot;: &quot;Poland&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
